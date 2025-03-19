@@ -17,7 +17,7 @@ defineProps({
 </script>
 
 <template>
-  <section class="flex justify-center items-center py-24 relative min-h-screen">
+  <section class="flex flex-wrap justify-center items-center py-24 relative min-h-screen">
     <video :src="bg" autoplay loop muted
             class="object-cover blur-sm grayscale h-full absolute left-0 top-0"></video>
         <div class="container flex items-center py-5 flex-col-reverse xl:flex-row gap-20 z-50">
@@ -39,9 +39,9 @@ defineProps({
                         Me</RouterLink>
                 </div>
             </div>
-            <div class="basis-full xl:basis-1/2 flex  justify-center">
+            <div class="basis-full xl:basis-1/2 flex flex-wrap justify-center">
                 <div
-                    class="justify-center size-96 xl:w-[500px] xl:h-[500px] 2xl:w-[600px] 2xl:h-[600px] rounded-full bg-center bg-cover bg-no-repeat bg-[url('../assets/images/wency.jpeg')]">
+                    class="justify-center size-80 xl:w-[500px] xl:h-[500px] 2xl:w-[600px] 2xl:h-[600px] rounded-full bg-center bg-cover bg-no-repeat bg-[url('../assets/images/wency.jpeg')]">
                 </div>
             </div>
         </div>
