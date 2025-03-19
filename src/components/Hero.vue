@@ -41,7 +41,7 @@ defineProps({
             </div>
             <div class="basis-full xl:basis-1/2 flex flex-wrap justify-center">
                 <div
-                    class="justify-center size-80 xl:w-[500px] xl:h-[500px] 2xl:w-[600px] 2xl:h-[600px] rounded-full bg-center bg-cover bg-no-repeat bg-[url('../assets/images/wency.jpeg')]">
+                    class="justify-center size-80 sm:size-96 xl:w-[500px] xl:h-[500px] 2xl:w-[600px] 2xl:h-[600px] rounded-full bg-center bg-cover bg-no-repeat bg-[url('../assets/images/wency.jpeg')]">
                 </div>
             </div>
         </div>

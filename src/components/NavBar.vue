@@ -1,21 +1,22 @@
 <script setup>
 import { RouterLink } from 'vue-router';
+import logo from '@/assets/images/jake_logo_black.svg'
 
 const home = "https://google.com"
 </script>
 
 <template>
     <div>
-        <nav class="bg-white">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <RouterLink to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <nav class="bg-white py-2">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+            <RouterLink to="/" class="flex items-center space-x-3 rtl:space-x-reverse ms-3">
                 
-                <img src="../assets/images/jake_logo_black.svg" class="h-14" alt="Jake Dave Logo" />
+                <img :src="logo" class="h-11" alt="Jake Dave Logo" />
                 
             </RouterLink>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                 <RouterLink to="/contact"
-                    class="font-medium py-3 px-5 bg-primary hover:bg-hover text-center text-white rounded-lg transition duration-150 ease-in-out transform hover:scale-110">
+                    class="font-medium py-2 px-5 bg-primary hover:bg-hover text-center text-white rounded-lg transition duration-150 ease-in-out transform hover:scale-110">
                     Contact Me!
                 </RouterLink>
                 <button data-collapse-toggle="navbar-cta" type="button"
@@ -70,7 +71,8 @@ const home = "https://google.com"
                     </li>
                 </ul>
             </div>
-        </div>
-    </nav>
+            </div>
+        </nav>
+        <hr class="border border-blue-500">
     </div>
 </template>
