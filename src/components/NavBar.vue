@@ -32,7 +32,7 @@ const home = "https://google.com"
             </div>
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
                 <ul
-                    class="flex md:items-center flex-col max-md:divide-y font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-bg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-bg">
+                    class="flex md:items-center flex-col max-md:divide-y font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-bg md:space-x-5 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
                     <li class="group inline-block relative max-md:hover:bg-hover">
                         <RouterLink to="/"
                             class="py-2 px-3 md:p-3 max-md:w-full inline-block text-lg font-semibold text-gray-800 max-md:group-hover:text-white md:group-hover:text-primary">
@@ -51,7 +51,7 @@ const home = "https://google.com"
                             </span>
                         </RouterLink>
                     </li>
-                    <li class="group inline-block relative max-md:hover:bg-hover">
+                    <!-- <li class="group inline-block relative max-md:hover:bg-hover">
                         <RouterLink to="/skills"
                             class="py-2 px-3 md:p-3 max-md:w-full inline-block text-lg font-semibold text-gray-800 max-md:group-hover:text-white md:group-hover:text-primary">
                             Skills
@@ -68,7 +68,7 @@ const home = "https://google.com"
                                 class="max-md:hidden absolute left-0 bottom-0 w-0 h-1 bg-primary group-hover:w-full transition-all duration-300 ease-in-out">
                             </span>
                         </RouterLink>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             </div>
