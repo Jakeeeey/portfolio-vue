@@ -1,38 +1,77 @@
 <script setup>
-import logo from "@/assets/images/jake_logo.png";
+import { ref } from "vue"
+import logo from "@/assets/images/jake_logo_black.svg";
+
+const isOpen = ref(false)
+
+const toggleMenu = () => {
+  isOpen.value = !isOpen.value
+}
 </script>
 
+
 <template>
-  <nav class="sticky top-0 z-50 bg-white">
-    <div class="container mx-auto flex flex-wrap py-2 items-center justify-between">
-      <div>
-        <img :src="logo" alt="" />
+  <!-- Navbar -->
+  <nav
+    class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/70 border-b border-gray-200"
+  >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0 text-xl font-bold">
+          <img :src="logo" alt="Logo" class="w-32">
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="#" class="hover:text-blue-600">Home</a>
+          <a href="#" class="hover:text-blue-600">About</a>
+          <a href="#" class="hover:text-blue-600">Services</a>
+          <a href="#" class="hover:text-blue-600">Contact</a>
+          <a href="#" class="py-1.5 px-2 text-white rounded-lg bg-blue-500 hover:bg-blue-600">Hire Me Now!</a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <div class="md:hidden">
+          <button @click="toggleMenu" class="focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path v-if="!isOpen" d="M4 6h16M4 12h16M4 18h16" />
+              <path v-else d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
       </div>
-      <div class="max-md:hidden">
-        <ul class="flex flex-row space-x-10">
-          <li><a href="#hero" class="text-xl font-medium">Home</a></li>
-          <li><a href="#about" class="text-xl font-medium">About</a></li>
-          <li><a href="#services" class="text-xl font-medium">Services</a></li>
-          <li><a href="#works" class="text-xl font-medium">Works</a></li>
-        </ul>
-      </div>
-      <a href="#contact" class="py-3 px-5 bg-blue-500 rounded-xl font-medium text-white max-md:hidden hover:bg-blue-700 transition duration-150 ease-in-out transform hover:scale-110">Connect With Me!</a>
-      <button class="md:hidden">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="size-6"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
-      </button>
     </div>
+
+    <!-- Mobile Dropdown -->
+    <transition
+      enter-active-class="transition duration-300 ease-out"
+      enter-from-class="opacity-0 -translate-y-2"
+      enter-to-class="opacity-100 translate-y-0"
+      leave-active-class="transition duration-200 ease-in"
+      leave-from-class="opacity-100 translate-y-0"
+      leave-to-class="opacity-0 -translate-y-2"
+    >
+      <div
+        v-if="isOpen"
+        class="border-b border-gray-200"
+      >
+        <div class="px-4 pt-2 pb-4 space-y-2">
+          <a href="#" class="p-3 block hover:bg-gray-300 rounded-sm">Home</a>
+          <a href="#" class="p-3 block hover:bg-gray-300 rounded-sm">About</a>
+          <a href="#" class="p-3 block hover:bg-gray-300 rounded-sm">Services</a>
+          <a href="#" class="p-3 block hover:bg-gray-300 rounded-sm">Contact</a>
+          <a href="#" class="p-3 block bg-blue-500 text-center text-white rounded-sm">Hire Me Now!</a>
+        </div>
+      </div>
+    </transition>
   </nav>
 </template>

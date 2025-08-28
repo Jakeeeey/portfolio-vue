@@ -4,10 +4,10 @@
 
 <template>
   <div class="w-20 flex flex-col space-y-2">
-    <h1 class="text-2xl text-gray-400">Menu</h1>
+    <h1 class="text-xl lg:text-2xl text-gray-400">Menu</h1>
     <a
       href="#home"
-      class="md:text-lg border-b border-gray-400 transition duration-150 ease-in-out md:hover:scale-105 md:hover:text-blue-500 inline-flex items-center space-x-2"
+      class="text-lg border-b border-gray-400 transition duration-150 ease-in-out md:hover:scale-105 md:hover:text-blue-500 inline-flex items-center space-x-2"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@
     </a>
     <a
       href="#about"
-      class="md:text-lg border-b border-gray-400 transition duration-150 ease-in-out md:hover:scale-105 md:hover:text-blue-500 inline-flex items-center space-x-2"
+      class="text-lg border-b border-gray-400 transition duration-150 ease-in-out md:hover:scale-105 md:hover:text-blue-500 inline-flex items-center space-x-2"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

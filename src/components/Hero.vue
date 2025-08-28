@@ -1,37 +1,62 @@
 <script setup>
-import bg from '@/assets/images/background_image_code.mp4'
+import bg from "@/assets/images/background_image_code.mp4";
+import profile from "@/assets/images/jake_profile.jpg";
+import facebook from "@/assets/images/facebook.svg";
+import whatsapp from "@/assets/images/whatsapp.svg";
+import linkedin from "@/assets/images/linkedin.svg";
+import github from "@/assets/images/github.svg";
 </script>
 
 <template>
-  <section class="flex flex-wrap justify-center items-center py-24 relative min-h-screen" id="home">
-    <video :src="bg" autoplay loop muted
-            class="object-cover blur-sm grayscale h-full absolute left-0 top-0"></video>
-        <div class="container flex items-center py-5 flex-col-reverse xl:flex-row gap-20 z-10">
-            <div class="basis-full xl:basis-1/2 space-y-7 max-xl:text-center">
-                <div>
-                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl text-white">Hi, I'm <span class="text-primary">Jake De Guzman</span>,
-                    </h2>
-                    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl text-white">Bringing Ideas to Life Through Code.</h1>
-                </div>
-                <p class="text-md sm:text-xl text-white">An aspiring web developer specializing in crafting user-friendly and
-                    dynamic web
-                    solutions.</p>
-                <div class="flex justify-center items-center flex-col md:flex-row gap-5">
-                    <a href="#contact"
-                        class="w-52 py-3 font-medium bg-blue-500 text-center text-white rounded-lg transition duration-150 ease-in-out md:hover:scale-105">Connect With
-                        Me!</a>
-                    <a href="#"
-                        class="w-52 py-3 font-medium border border-white rounded-lg text-center text-white hover:bg-gray-100 hover:text-gray-900 transition duration-150 ease-in-out md:hover:scale-105">My Resume</a>
-                </div>
-            </div>
-            <div class="basis-full xl:basis-1/2 flex flex-wrap justify-center">
-                <!-- <div
-                    class="justify-center size-48 sm:size-60 xl:w-[500px] xl:h-[500px] 2xl:w-[600px] 2xl:h-[600px] rounded-full bg-center bg-cover bg-no-repeat bg-[url('../assets/images/wency.jpeg')]">
-                </div> -->
-                <div
-                    class="justify-center size-48 sm:size-60 xl:w-[500px] xl:h-[500px] 2xl:w-[600px] 2xl:h-[600px] rounded-full bg-center bg-cover bg-no-repeat bg-[url('../assets/images/wency.jpeg')]">
-                </div>
-            </div>
+  <section
+    class="mt-[65px] flex justify-center bg-gradient-to-r from-blue-200 via-white to-blue-200 min-h-screen"
+  >
+    <div class="max-w-7xl px-6 lg:px-8 flex flex-col-reverse md:flex-row justify-center gap-10 py-16">
+      <!-- Heading -->
+      <div class="basis-1/2 flex flex-col justify-center max-lg:text-center lg:pe-20">
+        <h3 class="text-5xl lg:text-7xl font-semibold mb-1">Hi, I'm 
+            <span class="text-blue-500">Jake</span>
+        </h3>
+        <h4 class="text-3xl lg:text-5xl font-semibold mb-3">Web Developer</h4>
+        <p class="max-md:text-sm mb-3">
+          Whether you’re starting from scratch or need help refining your ideas, I’m here to collaborate and deliver solutions that truly stand out. Let’s turn your vision into reality—reach out today!
+        </p>
+
+        <!-- Socials -->
+        <div class="flex flex-row max-lg:justify-center gap-x-3 mt-2 mb-5">
+          <a href="https://www.facebook.com/jakedave.deguzman.7/">
+            <img :src="facebook" alt="" class="size-11 hover:scale-110" />
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=639510505308">
+            <img :src="whatsapp" alt="" class="size-11 hover:scale-110" />
+          </a>
+          <a href="https://www.linkedin.com/in/jake-dave-de-guzman-6178a92bb/">
+            <img :src="linkedin" alt="" class="size-11 hover:scale-110" />
+          </a>
+          <a href="https://github.com/Jakeeeey">
+            <img :src="github" alt="" class="size-11 hover:scale-110" />
+          </a>
         </div>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col lg:flex-row gap-3 lg:gap-6">
+          <a href="" class="py-2 px-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white"
+            >Hire Me Now!</a
+          >
+          <a
+            href=""
+            class="py-2 px-3 border border-gray-400 rounded-lg bg-transparent hover:bg-gray-400 text-black"
+            >View Projects</a
+          >
+        </div>
+      </div>
+
+      <!-- Picture -->
+      <div class="basis-1/2 flex items-center justify-center lg:justify-end">
+        <div class="size-[240px] md:size-[340px] lg:size-[500px] rounded-full border border-gray-300 overflow-hidden shadow-2xl">
+          <img :src="profile" alt="" class="-mt-32 md:-mt-36 lg:-mt-64 hover:scale-110 transition-all w-full" />
+        </div>
+      </div>
+    </div>
   </section>
 </template>

@@ -8,18 +8,18 @@ import FooterWidget4 from "./FooterWidget4.vue";
 <template>
   <footer class="bg-gray-950">
     <div class="container mx-auto">
-        <div class="py-10 flex flex-col xl:flex-row text-white max-xl:gap-8">
+        <div class="py-4 lg:py-10 flex flex-col xl:flex-row text-white max-xl:gap-4">
             <FooterWidget1 />
 
-            <div class="flex flex-col xl:flex-row text-white gap-8 xl:gap-28">
+            <div class="flex flex-col xl:flex-row text-white gap-3 xl:gap-28">
                 <FooterWidget2 />
                 <FooterWidget3 />
                 <FooterWidget4 />
             </div>
         </div>
       <hr class="border-gray-500" />
-      <div class="text-center py-5 text-white">
-        <p>
+      <div class="text-center py-3 lg:py-5 text-white">
+        <p class="max-sm:text-xs">
           &copy; 2025 <span class="text-sky-500">Jake Dave De Guzman</span> Portfolio. All Rights
           Reserved.
         </p>
