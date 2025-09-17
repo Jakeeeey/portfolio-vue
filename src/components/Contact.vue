@@ -18,21 +18,6 @@ const sendEmail = async () => {
     email: email.value,
     message: message.value
   }
-    /* emailjs
-    .send(
-      serviceId,
-      templateId,
-      {
-        name: name.value,
-        email: email.value,
-        message: message.value,
-      },
-      publicKey
-    )
-    .then(
-      () => toast.success("Message sent!"),
-      (error) => toast.error("Error: " + error.text)
-    ); */
 
     try {
         await emailjs.send(serviceId, templateId, details, publicKey)
@@ -44,7 +29,6 @@ const sendEmail = async () => {
     } catch(error) {
         toast.error("Error: ", + error.text)
     }
-  
 };
 </script>
 

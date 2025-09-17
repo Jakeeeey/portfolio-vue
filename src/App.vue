@@ -7,7 +7,7 @@ import Services from "./components/Services.vue";
 import Works from "./components/Works.vue";
 import Contact from "./components/Contact.vue";
 import TechStack from "./components/TechStack.vue";
-import Test from "./components/Test.vue";
+/* import Test from "./components/Test.vue"; */
 import FooterBanner from "./components/FooterBanner.vue";
 import Footer from "./components/Footer.vue";
 </script>
@@ -20,10 +20,9 @@ import Footer from "./components/Footer.vue";
   <!-- <About/>-->
   
   <Works/>
-  <Contact/>
   <TechStack />
-  <Test />
-  <FooterBanner />
+  <Contact/>
+  <!-- <FooterBanner /> -->
   <Footer/> 
 </template>
 
