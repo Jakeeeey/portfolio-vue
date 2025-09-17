@@ -24,8 +24,8 @@ const sendEmail = async () => {
 
         toast.success("Message sent!")
         name.value = "";
-        name.value = "";
-        name.value = "";
+        email.value = "";
+        message.value = "";
     } catch(error) {
         toast.error("Error: ", + error.text)
     }
