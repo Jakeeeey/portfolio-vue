@@ -12,9 +12,13 @@ const serviceId = "service_fbbdn6l";
 const templateId = "template_kseum7r";
 const publicKey = "RP8fxrmCHA1AYJx4V";
 
-const sendEmail = () => {
-  
-    emailjs
+const sendEmail = async () => {
+  const details = {
+    name: name.value,
+    email: email.value,
+    message: message.value
+  }
+    /* emailjs
     .send(
       serviceId,
       templateId,
@@ -28,7 +32,18 @@ const sendEmail = () => {
     .then(
       () => toast.success("Message sent!"),
       (error) => toast.error("Error: " + error.text)
-    );
+    ); */
+
+    try {
+        await emailjs.send(serviceId, templateId, details, publicKey)
+
+        toast.success("Message sent!")
+        name.value = "";
+        name.value = "";
+        name.value = "";
+    } catch(error) {
+        toast.error("Error: ", + error.text)
+    }
   
 };
 </script>
