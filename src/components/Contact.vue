@@ -1,4 +1,37 @@
-<script setup></script>
+<script setup>
+import emailjs from "@emailjs/browser";
+import { useToast } from "vue-toastification";
+import { ref } from "vue";
+
+const name = ref("");
+const email = ref("");
+const message = ref("");
+const toast = useToast();
+
+const serviceId = "service_fbbdn6l";
+const templateId = "template_kseum7r";
+const publicKey = "RP8fxrmCHA1AYJx4V";
+
+const sendEmail = () => {
+  
+    emailjs
+    .send(
+      serviceId,
+      templateId,
+      {
+        name: name.value,
+        email: email.value,
+        message: message.value,
+      },
+      publicKey
+    )
+    .then(
+      () => toast.success("Message sent!"),
+      (error) => toast.error("Error: " + error.text)
+    );
+  
+};
+</script>
 
 <template>
   <section
@@ -11,7 +44,11 @@
         <div class="flex flex-col xl:flex-row lg:gap-20">
           <div class="basis-1/2 space-y-8 p-8">
             <div class="md:pr-28">
-              <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium mb-2">Let’s Connect</h1>
+              <h1
+                class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium mb-2"
+              >
+                Let’s Connect
+              </h1>
               <p class="text-md lg:text-lg xl:text-xl font-normal">
                 I’m excited to learn more about your project and how we can collaborate.
                 Fill out the form below, and let’s begin turning your ideas into reality.
@@ -47,7 +84,11 @@
               </div>
             </div>
             <div>
-              <h4 class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium mb-2">Message Me:</h4>
+              <h4
+                class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium mb-2"
+              >
+                Message Me:
+              </h4>
               <div class="flex space-x-5">
                 <a
                   href="https://www.m.me/jakedave.deguzman.7"
@@ -182,7 +223,7 @@
           <div
             class="basis-1/2 space-y-3 p-8 border border-gray-200 shadow-2xl bg-gray-200 z-10"
           >
-            <form action="#" method="post">
+            <form @submit.prevent="sendEmail">
               <div class="mb-2">
                 <label
                   for="name"
@@ -193,6 +234,8 @@
                   type="text"
                   name="name"
                   id="name"
+                  v-model="name"
+                  required
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 caret-primary"
                   placeholder="Enter Your Name"
                 />
@@ -204,24 +247,12 @@
                   >Email</label
                 >
                 <input
-                  type="text"
+                  type="email"
                   name="email"
                   id="email"
+                  v-model="email"
+                  required
                   placeholder="Enter Your Email"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 caret-primary"
-                />
-              </div>
-              <div class="mb-2">
-                <label
-                  for="subject"
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                  >Subject</label
-                >
-                <input
-                  type="text"
-                  name="subject"
-                  id="subject"
-                  placeholder="Enter Your Subject"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 caret-primary"
                 />
               </div>
@@ -234,6 +265,8 @@
                 <textarea
                   id="message"
                   rows="4"
+                  v-model="message"
+                  required
                   class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 caret-primary"
                   placeholder="Enter Your Message"
                 ></textarea>
