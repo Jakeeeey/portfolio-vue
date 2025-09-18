@@ -1,5 +1,7 @@
 <script setup>
-import taxstorelakemba from "@/assets/images/TaxStoreLakemba.png";
+import taxstorelakemba from "@/assets/images/taxStoreLakemba.png";
+import todolist from "@/assets/images/toDoList.png";
+import calculator from "@/assets/images/calculator.png";
 </script>
 
 <template>
@@ -8,10 +10,10 @@ import taxstorelakemba from "@/assets/images/TaxStoreLakemba.png";
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <!-- Section Title -->
         <div class="text-center mb-16">
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+          <h2 class="text-3xl font-bold text-gray-800">
             Featured Projects
           </h2>
-          <p class="mt-4 text-lg text-gray-600">
+          <p class="mt-4 text-sm md:text-base text-gray-600">
             Here are some of the projects I’ve worked on recently.
           </p>
         </div>
@@ -23,19 +25,18 @@ import taxstorelakemba from "@/assets/images/TaxStoreLakemba.png";
             class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition"
           >
             <img
-              src="https://via.placeholder.com/600x400"
+              :src="todolist"
               alt="Project Screenshot"
               class="w-full h-48 object-cover"
             />
             <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-900">Project One</h3>
-              <p class="mt-3 text-gray-600">
-                A web application built with Laravel & Vue.js that manages payroll for
-                small businesses.
+              <h3 class="text-xl font-semibold text-gray-900">To-Do List App</h3>
+              <p class="mt-3 text-gray-600 text-sm md:text-base">
+                A Vue.js task manager that lets users add, edit, complete, and delete tasks in a clean and responsive interface.
               </p>
               <div class="mt-4 flex gap-4">
-                <a href="#" class="text-blue-600 hover:underline">View Demo</a>
-                <a href="#" class="text-gray-600 hover:underline">GitHub</a>
+                <a href="https://to-do-list-vue-gilt.vercel.app/" target="_blank" class="text-blue-600 hover:underline text-sm md:text-base">View Demo</a>
+                <a href="https://github.com/Jakeeeey/to-do-list-vue" target="_blank" class="text-gray-600 hover:underline text-sm md:text-base">GitHub</a>
               </div>
             </div>
           </div>
@@ -51,7 +52,7 @@ import taxstorelakemba from "@/assets/images/TaxStoreLakemba.png";
             />
             <div class="p-6">
               <h3 class="text-xl font-semibold text-gray-900">Tax Store Lakemba</h3>
-              <p class="mt-3 text-gray-600">
+              <p class="mt-3 text-gray-600 text-sm md:text-base">
                 Custom WordPress website developed for an accounting firm with full CMS
                 integration.
               </p>
@@ -59,10 +60,10 @@ import taxstorelakemba from "@/assets/images/TaxStoreLakemba.png";
                 <a
                   href="https://taxstorelakemba.com.au/"
                   target="_blank"
-                  class="text-blue-600 hover:underline"
+                  class="text-blue-600 hover:underline text-sm md:text-base"
                   >View Demo</a
                 >
-                <a href="#" class="text-gray-600 hover:underline">GitHub</a>
+                <a href="#" class="text-gray-600 hover:underline text-sm md:text-base">GitHub</a>
               </div>
             </div>
           </div>
@@ -72,19 +73,18 @@ import taxstorelakemba from "@/assets/images/TaxStoreLakemba.png";
             class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition"
           >
             <img
-              src="https://via.placeholder.com/600x400"
+              :src="calculator"
               alt="Project Screenshot"
               class="w-full h-48 object-cover"
             />
             <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-900">Project Three</h3>
-              <p class="mt-3 text-gray-600">
-                A responsive Vue.js task manager app that helps users organize tasks and
-                track progress.
+              <h3 class="text-xl font-semibold text-gray-900">Calculator App</h3>
+              <p class="mt-3 text-gray-600 text-sm md:text-base">
+                A Vue.js application that performs basic arithmetic operations with a clean and responsive interface.
               </p>
               <div class="mt-4 flex gap-4">
-                <a href="#" class="text-blue-600 hover:underline">View Demo</a>
-                <a href="#" class="text-gray-600 hover:underline">GitHub</a>
+                <a href="https://calculator-three-taupe-38.vercel.app/" class="text-blue-600 hover:underline text-sm md:text-base">View Demo</a>
+                <a href="#" class="text-gray-600 hover:underline text-sm md:text-base">GitHub</a>
               </div>
             </div>
           </div>

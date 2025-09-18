@@ -7,7 +7,7 @@
         <!-- Section Title -->
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-800">Services I Offer</h2>
-          <p class="mt-3 text-gray-600">
+          <p class="mt-3 text-gray-600 text-sm md:text-base">
             From websites to web apps, I deliver solutions that bring your ideas to life.
           </p>
         </div>
@@ -35,7 +35,7 @@
                 Custom Website Development
               </h3>
             </div>
-            <p class="text-gray-600">
+            <p class="text-gray-600 text-sm md:text-base">
               I build responsive and modern websites tailored to your business needs using
               PHP, Laravel, Vue.js, and MySQL.
             </p>
@@ -68,7 +68,7 @@
                 Frontend Development
               </h3>
             </div>
-            <p class="text-gray-600">
+            <p class="text-gray-600 text-sm md:text-base">
               I create engaging, user-friendly, and mobile-optimized interfaces with clean
               code and smooth interactions.
             </p>
@@ -106,7 +106,7 @@
                 Backend Development
               </h3>
             </div>
-            <p class="text-gray-600">
+            <p class="text-gray-600 text-sm md:text-base">
               I develop secure and scalable backend systems, including user
               authentication, database management, and APIs.
             </p>
@@ -138,7 +138,7 @@
                 WordPress Development
               </h3>
             </div>
-            <p class="text-gray-600">
+            <p class="text-gray-600 text-sm md:text-base">
               From custom themes to plugin customization, I design and develop WordPress
               websites that are easy to manage.
             </p>
@@ -169,7 +169,7 @@
                 Website Optimization & Security
               </h3>
             </div>
-            <p class="text-gray-600">
+            <p class="text-gray-600 text-sm md:text-base">
               I optimize website performance for speed and SEO, while ensuring protection
               against common security vulnerabilities.
             </p>
@@ -202,7 +202,7 @@
                 Maintenance & Support
               </h3>
             </div>
-            <p class="text-gray-600">
+            <p class="text-gray-600 text-sm md:text-base">
               I provide ongoing website care—regular updates, bug fixes, backups, and
               technical support to keep everything running smoothly.
             </p>
@@ -229,7 +229,7 @@
                 Database & Hosting Setup
               </h3>
             </div>
-            <p class="text-gray-600">
+            <p class="text-gray-600 text-sm md:text-base">
               I set up hosting environments, manage databases, and ensure smooth
               deployment with proper configuration.
             </p>

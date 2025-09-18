@@ -23,7 +23,7 @@ import github from "@/assets/images/github.svg";
             <span class="text-blue-500">Jake</span>
           </h3>
           <h4 class="text-3xl lg:text-5xl font-semibold mb-3">Web Developer</h4>
-          <p class="max-md:text-sm mb-3">
+          <p class="text-sm md:text-base mb-3">
             Whether you’re starting from scratch or need help refining your ideas, I’m
             here to collaborate and deliver solutions that truly stand out. Let’s turn
             your vision into reality—reach out today!
@@ -49,12 +49,12 @@ import github from "@/assets/images/github.svg";
           <div class="flex flex-col lg:flex-row gap-3 lg:gap-6">
             <a
               href="#contact"
-              class="py-2 px-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white"
+              class="py-2 px-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white text-sm md:text-base font-bold"
               >Get In Touch</a
             >
             <a
               href="#projects"
-              class="py-2 px-3 border border-gray-400 rounded-lg bg-transparent hover:bg-gray-400 text-black"
+              class="py-2 px-3 border border-gray-400 rounded-lg bg-transparent hover:bg-gray-400 text-black text-sm md:text-base font-bold"
               >View Projects</a
             >
           </div>

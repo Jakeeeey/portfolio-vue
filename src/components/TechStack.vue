@@ -18,7 +18,7 @@ import wordpress from "@/assets/images/wordpress.svg";
       >
         <div class="text-center mb-16 space-y-2">
           <h3 class="text-3xl font-bold text-gray-800">Technological Stack</h3>
-          <h5 class="text-xl text-gray-600">
+          <h5 class="text-sm md:text-base text-gray-600">
             Tools and Frameworks I use to create quality website.
           </h5>
         </div>
