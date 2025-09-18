@@ -1,14 +1,13 @@
 <script setup>
-import { ref } from "vue"
+import { ref } from "vue";
 import logo from "@/assets/images/jake_logo_black.svg";
 
-const isOpen = ref(false)
+const isOpen = ref(false);
 
 const toggleMenu = () => {
-  isOpen.value = !isOpen.value
-}
+  isOpen.value = !isOpen.value;
+};
 </script>
-
 
 <template>
   <!-- Navbar -->
@@ -19,16 +18,22 @@ const toggleMenu = () => {
       <div class="flex justify-between items-center h-16">
         <!-- Logo -->
         <div class="flex-shrink-0 text-xl font-bold">
-          <img :src="logo" alt="Logo" class="w-32">
+          <a href="#home">
+            <img :src="logo" alt="Logo" class="w-32" />
+          </a>
         </div>
 
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-6">
-          <a href="#" class="hover:text-blue-600">Home</a>
-          <a href="#" class="hover:text-blue-600">About</a>
-          <a href="#" class="hover:text-blue-600">Services</a>
-          <a href="#" class="hover:text-blue-600">Contact</a>
-          <a href="#" class="py-1.5 px-2 text-white rounded-lg bg-blue-500 hover:bg-blue-600">Hire Me Now!</a>
+          <a href="#home" class="hover:text-blue-600">Home</a>
+          <a href="#services" class="hover:text-blue-600">Services</a>
+          <a href="#stack" class="hover:text-blue-600">Tech Stack</a>
+          <a href="#projects" class="hover:text-blue-600">Projects</a>
+          <a
+            href="#contact"
+            class="py-1.5 px-2 text-white rounded-lg bg-blue-500 hover:bg-blue-600"
+            >Contact</a
+          >
         </div>
 
         <!-- Mobile Hamburger -->
@@ -60,16 +65,18 @@ const toggleMenu = () => {
       leave-from-class="opacity-100 translate-y-0"
       leave-to-class="opacity-0 -translate-y-2"
     >
-      <div
-        v-if="isOpen"
-        class="border-b border-gray-200"
-      >
+      <div v-if="isOpen" class="border-b border-gray-200">
         <div class="px-4 pt-2 pb-4 space-y-2">
-          <a href="#" class="p-3 block hover:bg-gray-300 rounded-sm">Home</a>
-          <a href="#" class="p-3 block hover:bg-gray-300 rounded-sm">About</a>
-          <a href="#" class="p-3 block hover:bg-gray-300 rounded-sm">Services</a>
-          <a href="#" class="p-3 block hover:bg-gray-300 rounded-sm">Contact</a>
-          <a href="#" class="p-3 block bg-blue-500 text-center text-white rounded-sm">Hire Me Now!</a>
+          <a href="#home" class="p-3 block hover:bg-gray-300 rounded-sm">Home</a>
+          <a href="#services" class="p-3 block hover:bg-gray-300 rounded-sm">Services</a>
+          <a href="#stack" class="p-3 block hover:bg-gray-300 rounded-sm">Tech Stack</a>
+          <a href="#projects" class="p-3 block hover:bg-gray-300 rounded-sm">Projects</a>
+          <!-- <a href="#" class="p-3 block hover:bg-gray-300 rounded-sm">Contact</a> -->
+          <a
+            href="#contact"
+            class="p-3 block bg-blue-500 text-center text-white rounded-sm"
+            >Contact</a
+          >
         </div>
       </div>
     </transition>

@@ -9,6 +9,7 @@ import github from "@/assets/images/github.svg";
 
 <template>
   <section
+  id="home"
     class="mt-[65px] flex justify-center bg-gradient-to-r from-blue-200 via-white to-blue-200 min-h-screen"
   >
     <div class="max-w-7xl px-6 lg:px-8 flex flex-col-reverse md:flex-row justify-center gap-10 py-16">

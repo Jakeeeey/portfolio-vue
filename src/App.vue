@@ -14,15 +14,14 @@ import Footer from "./components/Footer.vue";
 
 <template>
   <!-- <Navbar/> -->
-  <Navbar/>
-  <Hero/>
-  <Services/>
+  <Navbar />
+  <Hero />
+  <Services />
   <!-- <About/>-->
-  
-  <Works/>
-  <TechStack />
-  <Contact/>
-  <!-- <FooterBanner /> -->
-  <Footer/> 
-</template>
 
+  <TechStack />
+  <Works />
+  <Contact />
+  <!-- <FooterBanner /> -->
+  <Footer />
+</template>

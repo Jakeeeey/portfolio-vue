@@ -11,7 +11,7 @@ import mysql from "@/assets/images/mysql.svg";
 import wordpress from "@/assets/images/wordpress.svg";
 </script>
 <template>
-  <section class="py-16 flex justify-center items-center">
+  <section id="stack" class="py-16 flex justify-center items-center">
     <div class="max-w-7xl px-6 lg:px-8 flex flex-col justify-center items-center flex-wrap">
       <div class="text-center mb-16 space-y-2">
         <h3 class="text-3xl font-bold text-gray-800">Technological Stack</h3>
