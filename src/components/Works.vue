@@ -3,8 +3,8 @@ import taxstorelakemba from "@/assets/images/TaxStoreLakemba.png";
 </script>
 
 <template>
-  <section id="projects" class="bg-gray-50 py-20">
-    <MotionGroup preset="slideVisibleLeft" :duration="1000">
+  <MotionGroup preset="fadeVisible" :duration="1000">
+    <section id="projects" class="bg-gray-50 py-20">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <!-- Section Title -->
         <div class="text-center mb-16">
@@ -90,6 +90,6 @@ import taxstorelakemba from "@/assets/images/TaxStoreLakemba.png";
           </div>
         </div>
       </div>
-    </MotionGroup>
-  </section>
+    </section>
+  </MotionGroup>
 </template>

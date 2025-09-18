@@ -1,8 +1,8 @@
 <script setup></script>
 
 <template>
-  <section id="services" class="py-16 bg-gray-50">
-    <MotionGroup preset="popVisible" :duration="600">
+  <MotionGroup preset="fadeVisible" :duration="1000">
+    <section id="services" class="py-16 bg-gray-50">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <!-- Section Title -->
         <div class="text-center mb-12">
@@ -236,6 +236,6 @@
           </div>
         </div>
       </div>
-    </MotionGroup>
-  </section>
+    </section>
+  </MotionGroup>
 </template>

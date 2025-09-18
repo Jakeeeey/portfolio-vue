@@ -33,17 +33,16 @@ const sendEmail = async () => {
 </script>
 
 <template>
-  <section
-    class="py-24 bg-blend-hard-light bg-center bg-cover bg-no-repeat bg-[url('../assets/images/background_image_plane.png')]"
-    id="contact"
-  >
-    <div class="container mx-auto">
-      <Motion preset="popVisible" :duration="1000">
+  <MotionGroup preset="fadeVisible" :duration="1000">
+    <section
+      class="py-24 bg-blend-hard-light bg-center bg-cover bg-no-repeat bg-[url('../assets/images/background_image_plane.png')]"
+      id="contact"
+    >
+      <div class="container mx-auto">
         <h1 class="text-center text-4xl lg:text-5xl xl:text-6xl mb-16">Get In Touch</h1>
-      </Motion>
-      <div class="flex justify-center items-center">
-        <div class="flex flex-col xl:flex-row lg:gap-20">
-          <MotionGroup preset="slideVisibleLeft" :duration="1000">
+
+        <div class="flex justify-center items-center">
+          <div class="flex flex-col xl:flex-row lg:gap-20">
             <div class="basis-1/2 space-y-8 p-8">
               <div class="md:pr-28">
                 <h1
@@ -221,9 +220,7 @@ const sendEmail = async () => {
                 </div>
               </div>
             </div>
-          </MotionGroup>
 
-          <MotionGroup preset="slideVisibleRight" :duration="1000">
             <div
               class="basis-1/2 space-y-3 p-8 border border-gray-200 shadow-2xl bg-gray-200 z-10"
             >
@@ -309,9 +306,9 @@ const sendEmail = async () => {
                 </button>
               </form>
             </div>
-          </MotionGroup>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </MotionGroup>
 </template>

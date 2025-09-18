@@ -11,8 +11,8 @@ import mysql from "@/assets/images/mysql.svg";
 import wordpress from "@/assets/images/wordpress.svg";
 </script>
 <template>
-  <section id="stack" class="py-16 flex justify-center items-center">
-    <MotionGroup preset="slideVisibleRight" :duration="1000">
+  <MotionGroup preset="fadeVisible" :duration="1000">
+    <section id="stack" class="py-16 flex justify-center items-center">
       <div
         class="max-w-7xl px-6 lg:px-8 flex flex-col justify-center items-center flex-wrap"
       >
@@ -105,6 +105,6 @@ import wordpress from "@/assets/images/wordpress.svg";
           </div>
         </div>
       </div>
-    </MotionGroup>
-  </section>
+    </section>
+  </MotionGroup>
 </template>
