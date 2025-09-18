@@ -31,7 +31,7 @@ const toggleMenu = () => {
           <a href="#projects" class="hover:text-blue-600 font-semibold">Projects</a>
           <a
             href="#contact"
-            class="py-1.5 px-2 text-white rounded-lg bg-blue-500 hover:bg-blue-600"
+            class="py-1.5 px-2 text-white rounded-lg bg-blue-500 hover:bg-blue-600 font-semibold"
             >Contact</a
           >
         </div>
