@@ -25,13 +25,13 @@ const toggleMenu = () => {
 
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-6">
-          <a href="#home" class="hover:text-blue-600">Home</a>
-          <a href="#services" class="hover:text-blue-600">Services</a>
-          <a href="#stack" class="hover:text-blue-600">Tech Stack</a>
-          <a href="#projects" class="hover:text-blue-600">Projects</a>
+          <a href="#home" class="hover:text-blue-600 font-semibold">Home</a>
+          <a href="#services" class="hover:text-blue-600 font-semibold">Services</a>
+          <a href="#stack" class="hover:text-blue-600 font-semibold">Tech Stack</a>
+          <a href="#projects" class="hover:text-blue-600 font-semibold">Projects</a>
           <a
             href="#contact"
-            class="py-1.5 px-2 text-white rounded-lg bg-blue-500 hover:bg-blue-600"
+            class="py-1.5 px-2 text-white rounded-lg bg-blue-500 hover:bg-blue-600 font-semibold"
             >Contact</a
           >
         </div>
