@@ -83,8 +83,8 @@ import calculator from "@/assets/images/calculator.png";
                 A Vue.js application that performs basic arithmetic operations with a clean and responsive interface.
               </p>
               <div class="mt-4 flex gap-4">
-                <a href="https://calculator-three-taupe-38.vercel.app/" class="text-blue-600 hover:underline text-sm md:text-base">View Demo</a>
-                <a href="#" class="text-gray-600 hover:underline text-sm md:text-base">GitHub</a>
+                <a href="https://calculator-three-taupe-38.vercel.app/" target="_blank" class="text-blue-600 hover:underline text-sm md:text-base">View Demo</a>
+                <a href="https://github.com/Jakeeeey/calculator-vue" target="_blank" class="text-gray-600 hover:underline text-sm md:text-base">GitHub</a>
               </div>
             </div>
           </div>
