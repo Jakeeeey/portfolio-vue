@@ -1,5 +1,5 @@
 <script setup>
-import taxStoreLakemba from "@/assets/images/taxStoreLakemba";
+import taxStoreLakemba from "@/assets/images/taxStoreLakemba.png";
 import todolist from "@/assets/images/toDoList.png";
 import calculator from "@/assets/images/calculator.png";
 </script>
@@ -46,7 +46,7 @@ import calculator from "@/assets/images/calculator.png";
             class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition"
           >
             <img
-              :src="TaxStoreLakemba"
+              :src="taxStoreLakemba"
               alt="Project Screenshot"
               class="w-full h-48 object-cover"
             />
